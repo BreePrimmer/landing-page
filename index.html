@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- viewport code referenced from MDN. This code will make it so that the website fits
+        in the size screen of the user. content="width: divice-width" sets the width of the viewport
+        to the width of the user's screen. -->
+        <meta name="viewport" content="width= device-width, intial-scale=1"/>
+        <!-- referenced gitlab solution. type="text.css" specifiyes the type of document. -->
+        <link rel="stylesheet" type="text/css" href="./assets\css/css/style.css"/>
+        <!-- This is the title of the website displayed in the browser, not on the website itself. -->
+        <title>My Landing Page</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="https://Github.com/">Github</a></li>
+                    <!-- referenced a blog post, https://ricardozea.medium.com/links-a-css-html-tip-for-junior-web-designers-and-devs-f82a330dd1ce and the solved index.html for this project. -->
+                    <!-- <a href="#"> Will create a "dummy link" so it will look like a link without linking to anything. -->
+                    <li> <a href="#">Portfolio</a></li>
+                    <!-- <a href =#Contact" will lead us to the form on the webage when we click this link. -->
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h1 class="margin">My New Website</h1>
+            <img src=c:\Users\aubre\bootcamp\Red-eyed-tree-frog.webp alt="Picture of a frog"/>
+            <p class="p1">Picture of a frog.</p>
+        </section>
+
+        <div>
+        <h2 class="align-center" id="font-size">Contact Me</h2>
+
+        <!--in order for the user to be taken to the contact me section after clicking the "contact" link at the top,
+            we must give the form the id "contact" and put this id in the code for the link of the contact section. NOted from w3 docs.
+            https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html-->
+        <form id="contact">
+            <ul>
+                <li> 
+            <!-- Referenced from W3Schools. The label element defines a label for many form elements.-->
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </li>
+                <li>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </li>
+                <li>
+                    <!-- referenced gitlab solution.  -->
+                    <button id="color-turquoise" type= "submit">SEND</button>
+                </li>
+        </form>
+        </div>
+
+        <footer>
+            <p id="color-white" id="padding-bottom">© 2023 My New Website Productions</p>
+        </footer>
+
+    </body>
+</html>

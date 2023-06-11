@@ -1,0 +1,160 @@
+/* univeral selector */
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* referenced from the gitlab solution for this project. I've been having a problem with my nav bar
+       disappearing, but adding the margin and padding properties may have helped. */
+    margin: 0;
+    padding: 0;
+}
+
+/* element selectors */
+body {
+    position: relative;
+
+}
+
+header {
+    background-color: turquoise;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    border: solid;
+    border-bottom-width: 10px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-color: lightgreen;
+}
+
+
+/* moves all of the items in the nav to the right */
+nav {
+    text-align: right;
+}
+
+/* the items in this list will be inline, at the top of the screen in the navigation bar. */
+/* these rules will only apply to list items in an unumbered list in a nav */
+header nav ul li {
+    display: inline;
+    padding: 25px;
+    /* referenced my notes and w3 schools. This code makes the navigation bar stay at the top of the screen.
+       https://www.w3schools.com/css/css_positioning.asp */
+    /* position: fixed; */
+    /* width: 97%,;
+    margin: 0px;
+    border-bottom: 10px; */
+    /* overflow: visible; */
+    /* min-height: fit-content; */ */ */
+}
+
+/* we have to make the link selector more specific, to make it white instead of blue since the browser makes it blue automatically. */
+nav ul li a {
+    color: white;
+    /* this gets rid of the underline from the text that happens from default browser settings */
+    text-decoration: none;
+    line-height: 35px;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 50px;
+    color: lightgreen;
+}
+
+section {
+    /* This will move the caption text under the image, and move this section in the center of the page. */
+    display: block;
+    text-align: center;
+    margin: 70px;
+    margin-top: 125px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
+
+form {
+    display: block;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    padding-top: 20px;
+    /* I was having problems getting my border to show up, so I referenced stack overflow for a solution.
+       https://stackoverflow.com/questions/5937148/css-border-not-working */
+    border-style: solid;
+    border-width: 20px;
+    border-color: lightgreen;
+    margin: auto;
+}
+
+h2 {
+    margin: 20px;
+    color: turquoise;
+}
+    
+ul {
+    /* this gets rid of the bullet points in our form.  */
+    /* Referenced from https://getcssscan.com/blog/how-to-remove-bullets-from-li-css#:~:text=By%20default%2C%20browsers%20add%20bullets,type%3A%20none%20to%20your%20code.&text=This%20code%20targets%20the%20CSS,none%20to%20remove%20the%20bullets. */
+    list-style-type: none;
+}
+
+div {
+    background-color: lightcyan;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    border: solid;
+    border-top-width: 10px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-color: lightgreen;
+}
+
+footer {
+    background-color: turquoise;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    padding: 7px;
+    margin: 10px;
+}
+
+label {
+    color: turquoise;
+}
+/* class selectors */
+.align-center {
+    text-align: center;
+}
+
+.margin {
+    margin: 50px
+}
+
+.p1 {
+    margin-top:20px;
+    color: lightgreen;
+}
+
+/* id selectors */
+#color-turquoise {
+    background-color: turquoise;
+    color: white
+}
+
+#color-white {
+    color: white;
+}
+
+#font-size {
+    font-size: 30px;
+}
